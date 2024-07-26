@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikhak</title>
+    <style>
+        *{
+            font-family: tahoma;
+        }
+        div.menu {
+            background-image:linear-gradient(to right,rgb(200, 200, 255),rgb(255, 200, 200),rgb(200, 200, 255));
+        }
+
+        div.menu-top {
+            display: grid;
+            grid-template-columns: 10fr 2fr;
+            height: 80px;
+            padding: 10px;
+        }
+
+        div.menu-search {
+            display: grid;
+            grid-template-columns: 60px 4fr 1fr;
+            column-gap: 15px;
+        }
+
+        div.menu-sign-up {
+        }
+
+        div.menu-buttom {
+            height: 60px;
+        }
+
+        img.menu-search {
+            height: 60px;
+            width: 60px;
+            border-radius: 30px;
+            margin-top: 5px;
+        }
+
+        input {
+            border: none;
+            font-size: 20px;
+            height: 90%;
+            background-color: rgb(206, 236, 189);
+            margin-right: 5px;
+        }
+
+        div.search {
+            height: 50px;
+            background-color: rgb(206, 236, 189);
+            border-radius: 25px 8px 8px 25px;
+            display: grid;
+            grid-template-columns: 1fr 60px;
+            margin-top: 10px;
+        }
+        div.menu-sign-up{
+            display: grid;
+            grid-template-columns: 50px 50px 1fr;
+            column-gap: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="menu-top">
+            <div class="menu-search">
+                <div>
+                    <img class="menu-search" src="images/mikhaklogo.jpeg">
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="جست و جوی محصول...">
+                    <img src="images/search.png" height="40px" width="40px">
+                </div>
+            </div>
+            <div class="menu-sign-up">
+                <img src="images/store.png" width="50px" height="50px">
+                <img src="images/man.png" width="50px" height="50px">
+                <h3>ورود/ثبت نام</h3>
+            </div>
+        </div>
+        <div class="menu-buttom"></div>
+    </div>
+</body>
+
+</html>
