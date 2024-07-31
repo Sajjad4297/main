@@ -1,5 +1,5 @@
 *{
-    font-family: "vazir";
+    font-family: "vazir" , tahoma;
 }
 div.layout{
     display: flex;
@@ -98,7 +98,7 @@ div.btns{
 }
 
 button{
-    font-family: "vazir";
+    font-family: "vazir" , tahoma;
     font-weight: bold;
     font-size: large;
     padding: 20px;
