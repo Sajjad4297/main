@@ -137,7 +137,7 @@ a span{
 /* --------buttons------- */
 
 /* -------------Mobile---------- */
-@media(max-width:500px){
+@media(max-width:700px){
     main{
         width: 90%;
         padding: 30px 10px;
