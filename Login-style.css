@@ -64,12 +64,12 @@ input:focus:not(input[type="checkbox"]){
     padding: 15px;
     border: 1px solid black;
 }
-input:focus+label:not([for="accept"]){
+input:focus+label:not([for="remmember-me"]){
     color: rgb(0, 68, 255);
     top: -30px;
     font-size: large;
 }
-input+label:not([for="accept"]){
+input+label:not([for="remmember-me"]){
     position: absolute;
     font-weight: bold;
     right: 10px;
