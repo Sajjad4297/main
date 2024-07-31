@@ -1,41 +1,48 @@
-*{
-    font-family: "vazir" , tahoma;
+* {
+    font-family: "vazir", tahoma;
 }
-div.layout{
+
+div.layout {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 750px;
 }
-form{
+
+form {
     height: 500px;
     border: 1px solid black;
     padding: 30px;
     width: 40%;
     border-radius: 5px;
-    box-shadow:  0 0 8px rgb(0, 68, 255);
+    box-shadow: 0 0 8px rgb(0, 68, 255);
 }
-form>div{
+
+form>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-div.information{
+
+div.information {
     height: 50%;
 }
-div.accept{
+
+div.accept {
     height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: start;
 }
-div.btns{
+
+div.btns {
     height: 40%;
 }
+
 /* ---------inputs--------- */
-div.inputs{
+div.inputs {
     position: relative;
     width: 100%;
     display: flex;
@@ -43,79 +50,91 @@ div.inputs{
     padding: 10px 0 10px 0;
     transition: all .5s;
 }
-div.inputs:focus-within{
+
+div.inputs:focus-within {
     margin-top: 40px;
 }
-input{
+
+input {
     width: 100%;
     padding: 15px 100px 15px 15px;
     font-size: large;
     outline: none;
     transition: all .5s;
     border: 1px solid rgba(0, 140, 255, 0.685);
-    color:rgb(0, 68, 255) ;
+    color: rgb(0, 68, 255);
 }
-label{
+
+label {
     transition: all .5s;
 }
-input:focus:not(input[type="checkbox"]){
+
+input:focus:not(input[type="checkbox"]) {
     box-shadow: 0 0 4px rgb(0, 140, 255), inset 0 0 4px rgb(0, 140, 255);
     border-radius: 10px;
     padding: 15px;
     border: 1px solid black;
 }
-input:focus+label:not([for="remmember-me"]){
+
+input:focus+label:not([for="remmember-me"]) {
     color: rgb(0, 68, 255);
     top: -30px;
     font-size: large;
 }
-input+label:not([for="remmember-me"]){
+
+input+label:not([for="remmember-me"]) {
     position: absolute;
     font-weight: bold;
     right: 10px;
     top: 27px;
 }
-img{
+
+img {
     width: 30px;
     height: 30px;
     position: absolute;
     left: 10px;
-    top: 24px;  
+    top: 24px;
 }
-img[src*="code"]{
+
+img[src*="code"] {
     width: 80px;
     height: 40px;
     top: 22px;
 }
-img[src*="refresh"]{
+
+img[src*="refresh"] {
     left: 90px;
     top: 26px;
     transition: all .3s;
 }
-img[src*="refresh"]:hover{
+
+img[src*="refresh"]:hover {
     transform: scale(1.2);
     filter: invert(51%) sepia(61%) saturate(495%) hue-rotate(170deg) brightness(99%) contrast(104%);
 }
-input:focus-visible~label img:not(img[src*="refresh"],img[src*="code"]){
+
+input:focus-visible~label img:not(img[src*="refresh"], img[src*="code"]) {
     filter: invert(51%) sepia(61%) saturate(495%) hue-rotate(170deg) brightness(99%) contrast(104%);
 }
+
 /* ---------inputs--------- */
 
 /* --------buttons------- */
-input[type="checkbox"]{
+input[type="checkbox"] {
     height: 17px;
     width: 17px;
     margin-left: 10px;
 }
 
-div.btns{
+div.btns {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-button{
-    font-family: "vazir" , tahoma;
+button {
+    font-family: "vazir", tahoma;
     font-weight: bold;
     font-size: large;
     padding: 20px;
@@ -123,54 +142,63 @@ button{
     margin: 0px 20px;
     border-radius: 10px;
     cursor: pointer;
-    transition:all .5s;
+    transition: all .5s;
     white-space: nowrap;
 }
-button:hover{
+
+button:hover {
     box-shadow: 0 0 10px rgb(0, 140, 255);
 }
+
 div.btns a.sign-up {
     font-style: italic;
     text-decoration: none;
-    color:rgb(0, 140, 255) ;  
-    font-weight: bold;  
+    color: rgb(0, 140, 255);
+    font-weight: bold;
     font-size: large;
 }
-a span{
+
+a span {
     text-decoration: underline;
     color: rgb(25, 0, 255);
     white-space: nowrap;
 }
-.btn1{
+
+.btn1 {
     border: 2px solid rgb(0, 68, 255);
     background-color: rgb(0, 68, 255);
     color: white;
 }
-.btn2{
+
+.btn2 {
     border: 2px solid rgb(0, 68, 255);
     background-color: white;
-    color:rgb(0, 68, 255) ;
+    color: rgb(0, 68, 255);
 }
+
 /* --------buttons------- */
 
 /* -------------Mobile---------- */
-@media(max-width:700px){
-    form{
+@media(max-width:700px) {
+    form {
         width: 90%;
         padding: 30px 10px;
     }
-    a.sign-up{
+
+    a.sign-up {
         font-size: medium !important;
     }
-    img[src*="code"]{
+
+    img[src*="code"] {
         width: 60px;
         height: 30px;
         top: 26px;
         left: 5px;
     }
-    img[src*="refresh"]{
+
+    img[src*="refresh"] {
         left: 62px;
         width: 25px;
         height: 25px;
-    }    
+    }
 }
