@@ -8,15 +8,20 @@
     <link rel="stylesheet" href="fonts/font.css">
     <style>
         body{
-            font-family: sans-serif;
+            padding: 0;
         }
-        ul {
+        main{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             list-style-type: none;
             padding: 0;
-            margin: auto;
             width: 300px;
             font-size: 30px;
-            text-align: center;
+            width: 100%;
+        }
+        body{
+            font-family: sans-serif;
         }
         a{
             height: 60px;
@@ -26,11 +31,11 @@
             padding: 20px;
             text-decoration: none;
             width: 200px;
-            display: block;
             padding: 10px;
             height: 40px;
             border-radius: 8px;
             margin-bottom: 40px;
+            text-align: center;
         }
         a:hover{
             background-color: blueviolet;
@@ -39,11 +44,11 @@
 </head>
 
 <body>
-    <ul>
-        <li><a href="div.html">Div</a></li>
-        <li><a href="mikhak.htm">mikhak</a></li>
-        <li><a href="Login.html">Login</a></li>
-    </ul>
+    <main>
+    <a href="div.html">Div</a>
+    <a href="mikhak.htm">mikhak</a>
+    <a href="Login.html">Login</a>
+</main>
 </body>
 
 </html>
