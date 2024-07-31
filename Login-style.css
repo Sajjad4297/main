@@ -20,8 +20,19 @@ form>div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50%;
     align-items: center;
+}
+div.information{
+    height: 50%;
+}
+div.accept{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+div.btns{
+    height: 40%;
 }
 /* ---------inputs--------- */
 div.inputs{
@@ -47,18 +58,18 @@ input{
 label{
     transition: all .5s;
 }
-input:focus{
+input:focus:not(input[type="checkbox"]){
     box-shadow: 0 0 4px rgb(0, 140, 255), inset 0 0 4px rgb(0, 140, 255);
     border-radius: 10px;
     padding: 15px;
     border: 1px solid black;
 }
-input:focus+label{
+input:focus+label:not([for="accept"]){
     color: rgb(0, 68, 255);
     top: -30px;
     font-size: large;
 }
-input+label{
+input+label:not([for="accept"]){
     position: absolute;
     font-weight: bold;
     right: 10px;
@@ -91,6 +102,12 @@ input:focus-visible~label img:not(img[src*="refresh"],img[src*="code"]){
 /* ---------inputs--------- */
 
 /* --------buttons------- */
+input[type="checkbox"]{
+    height: 17px;
+    width: 17px;
+    margin-left: 10px;
+}
+
 div.btns{
     display: flex;
     flex-direction: row;
