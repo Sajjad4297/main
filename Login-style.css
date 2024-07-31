@@ -85,7 +85,7 @@ img[src*="refresh"]:hover{
     transform: scale(1.2);
     filter: invert(51%) sepia(61%) saturate(495%) hue-rotate(170deg) brightness(99%) contrast(104%);
 }
-input:focus~label img:not(img[src*="refresh"],img[src*="code"]){
+input:focus-visible~label img:not(img[src*="refresh"],img[src*="code"]){
     filter: invert(51%) sepia(61%) saturate(495%) hue-rotate(170deg) brightness(99%) contrast(104%);
 }
 /* ---------inputs--------- */
@@ -139,10 +139,21 @@ a span{
 /* -------------Mobile---------- */
 @media(max-width:500px){
     main{
-        width: 80%;
+        width: 90%;
         padding: 30px 10px;
     }
     a{
         font-size: medium !important;
     }
+    img[src*="code"]{
+        width: 60px;
+        height: 30px;
+        top: 26px;
+        left: 5px;
+    }
+    img[src*="refresh"]{
+        left: 62px;
+        width: 25px;
+        height: 25px;
+    }    
 }
