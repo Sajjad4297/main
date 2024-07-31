@@ -8,7 +8,7 @@ div.layout{
     align-items: center;
     height: 750px;
 }
-main{
+form{
     height: 500px;
     border: 1px solid black;
     padding: 30px;
@@ -16,7 +16,7 @@ main{
     border-radius: 5px;
     box-shadow:  0 0 8px rgb(0, 68, 255);
 }
-main>div{
+form>div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,7 +112,7 @@ button{
 button:hover{
     box-shadow: 0 0 10px rgb(0, 140, 255);
 }
-div.btns a {
+div.btns a.sign-up {
     font-style: italic;
     text-decoration: none;
     color:rgb(0, 140, 255) ;  
@@ -138,11 +138,11 @@ a span{
 
 /* -------------Mobile---------- */
 @media(max-width:700px){
-    main{
+    form{
         width: 90%;
         padding: 30px 10px;
     }
-    a{
+    a.sign-up{
         font-size: medium !important;
     }
     img[src*="code"]{
