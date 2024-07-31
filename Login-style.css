@@ -70,9 +70,22 @@ img{
     position: absolute;
     left: 10px;
     top: 24px;  
-
 }
-input:focus~label img{
+img[src*="code"]{
+    width: 80px;
+    height: 40px;
+    top: 22px;
+}
+img[src*="refresh"]{
+    left: 90px;
+    top: 26px;
+    transition: all .3s;
+}
+img[src*="refresh"]:hover{
+    transform: scale(1.2);
+    filter: invert(51%) sepia(61%) saturate(495%) hue-rotate(170deg) brightness(99%) contrast(104%);
+}
+input:focus~label img:not(img[src*="refresh"],img[src*="code"]){
     filter: invert(51%) sepia(61%) saturate(495%) hue-rotate(170deg) brightness(99%) contrast(104%);
 }
 /* ---------inputs--------- */
@@ -127,5 +140,9 @@ a span{
 @media(max-width:500px){
     main{
         width: 80%;
+        padding: 30px 10px;
+    }
+    a{
+        font-size: medium !important;
     }
 }
