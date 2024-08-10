@@ -1,6 +1,9 @@
 * {
     font-family: "vazir", tahoma;
 }
+body{
+    transition: all .5s;
+}
 
 div.layout {
     display: flex;
@@ -17,6 +20,7 @@ form {
     width: 40%;
     border-radius: 5px;
     box-shadow: 0 0 8px rgb(0, 68, 255);
+    position: relative;
 }
 
 form>div {
@@ -65,18 +69,18 @@ input {
     color: rgb(0, 68, 255);
 }
 
-label {
+label:not(.error) {
     transition: all .5s;
 }
 
-input:focus:not(input[type="checkbox"]) {
+input:focus-visible:not(input[type="checkbox"]) {
     box-shadow: 0 0 4px rgb(0, 140, 255), inset 0 0 4px rgb(0, 140, 255);
     border-radius: 10px;
     padding: 15px;
     border: 1px solid black;
 }
 
-input:focus+label:not([for="remmember-me"]) {
+input:focus-visible+label:not([for="remmember-me"]) {
     color: rgb(0, 68, 255);
     top: -30px;
     font-size: large;
@@ -87,6 +91,13 @@ input+label:not([for="remmember-me"]) {
     font-weight: bold;
     right: 10px;
     top: 27px;
+}
+label.error{
+    position: absolute;
+    background-color: white;
+    bottom: -2px;
+    left: 20px;
+    padding: 0 3px;
 }
 
 img {
@@ -175,6 +186,44 @@ a span {
     background-color: white;
     color: rgb(0, 68, 255);
 }
+button#svg1,#svg2{
+    height: 60px;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: rgb(224, 224, 224);
+    border: none;
+    border-radius: 30px;
+}
+button#svg1:hover{
+    background-color: #3a394d;
+}
+button#svg2{
+    display: none;
+    background-color: #3a394d;
+}
+button#svg2:hover{
+    background-color: rgb(224, 224, 224);
+}
+svg{
+    width: 40px;
+    height: 40px;
+}
+svg#sun{
+    color: #3a394d;
+}
+svg#moon{
+    color:rgb(224, 224, 224);
+}
+button#svg1:hover svg#sun{
+    color: rgb(224, 224, 224);
+}
+button#svg2:hover svg#moon{
+    color: #3a394d;
+}
+
 
 /* --------buttons------- */
 

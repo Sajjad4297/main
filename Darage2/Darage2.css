@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "vazir";
+}
+
+div.layout {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+
+/* ------------inputs------------- */
+div.inputs {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+div.input {
+    width: 80%;
+    margin: 10px 0;
+
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    direction: ltr;
+}
+
+/* ------------inputs------------- */
+
+
+
+
+/* -------------result------------ */
+div.results {
+    background-color: aquamarine;
+}
+
+div.result {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    direction: ltr;
+}
+
+/* -------------result------------ */
