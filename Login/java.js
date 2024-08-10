@@ -68,3 +68,8 @@ function light() {
     document.getElementById('svg1').style.display="inline";
     document.getElementById('svg2').style.display="none";
 }
+function showTime() {
+    var time = new Date();
+    document.getElementsByTagName('h3')[0].innerHTML=time.getHours() + " : " + time.getMinutes() + " : " + time.getSeconds();
+}
+setInterval(showTime,1000);

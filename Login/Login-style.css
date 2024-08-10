@@ -224,6 +224,11 @@ button#svg1:hover svg#sun{
 button#svg2:hover svg#moon{
     color: #3a394d;
 }
+div#time{
+    position: absolute;
+    top: -70px;
+    direction: ltr;
+}
 
 
 /* --------buttons------- */
