@@ -21,6 +21,7 @@ form {
     border-radius: 5px;
     box-shadow: 0 0 8px rgb(0, 68, 255);
     position: relative;
+    transition: all .5s;
 }
 
 form>div {
