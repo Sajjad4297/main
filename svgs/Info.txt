@@ -1,0 +1,23 @@
+Password rar: ninpo628511
+
+Installation
+How to install
+1.) Download all files in Mediafire
+2.) Combine it using HJSplit
+3.) Extract files that have been combined with HJSPlit * 7GB more or less
+4.) Install patch or Mod Ninpo dota 2 offline 1, free anywhere. After that open the folder, there is a folder called Dota 2 Offline, open the folder and copy all files to dota 2 beta that has been extracted earlier
+5.) Download & Extract mod item 1422, open the folder and also copy to folder dota 2 beta that has been extracted. * Copy and replace
+6.) Download & Extract patch.Copy to dota2, open the folder and also copy to folder dota 2 beta that has been extracted. * Copy and replace
+7.) Run RevLoader.exe with Run As Administrator
+
+Indonesian
+Tutorial Install 
+1.) Download semua file yang ada di Mediafire
+2.) Gabungkan dengan menggunakan HJSplit
+3.) Extract file yang sudah digabung dengan HJSPlit *7GB kurang lebih
+4.) Install patch Ninpo, bebas dimana saja. Setelah itu buka foldernya, ada folder bernama   Dota 2 Offline, buka folder tersebut dan copykan semua file ke dota 2 beta yang telah di extract tadi
+5.) Download & Extract mod item 1422, buka foldernya dan copykan juga ke folder dota 2 beta yang telah di extract. * Copy and replace
+6.) Download & Extract patch.Copy to dota2, buka foldernya dan copykan juga ke folder dota 2 beta yang telah di extract. * Copy and replace
+7.) Jalankan RevLoader.exe dengan Run As Administrator
+
+Playing Happily

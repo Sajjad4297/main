@@ -7,10 +7,33 @@
     <title>Sajy</title>
     <link rel="stylesheet" href="fonts/font.css">
     <style>
-        body{
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
             padding: 0;
+            background: linear-gradient(-45deg, #17e55c, #bc46bc, #23a6d5, #46d3b2);
+            background-size: 400% 400%;
+            animation: gradient 20s ease infinite;
+
         }
-        main{
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+        main {
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -20,24 +43,29 @@
             font-size: 30px;
             width: 100%;
         }
-        body{
+
+        body {
             font-family: sans-serif;
         }
-        a{
+
+        a {
             height: 60px;
-            background-color: rgb(159, 28, 163);
-            color: white;
+            backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+            border-radius: 12px;
+            border: 1px solid rgba(209, 213, 219, 0.3);
             font-weight: bold;
             padding: 20px;
             text-decoration: none;
             width: 200px;
             padding: 10px;
             height: 40px;
-            border-radius: 8px;
             margin-bottom: 40px;
             text-align: center;
         }
-        a:hover{
+
+        a:hover {
             background-color: blueviolet;
         }
     </style>
@@ -45,9 +73,9 @@
 
 <body>
     <main>
-    <a href="Login/Login.html">Login</a>
-    <a href="Darage2/Darage2.html">Darage2</a>
-</main>
+        <a href="Login/Login.html">Login</a>
+        <a href="Darage2/Darage2.html">Darage2</a>
+    </main>
 </body>
 
 </html>

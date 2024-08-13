@@ -57,6 +57,7 @@ function dark() {
     document.getElementsByTagName('span')[0].style.color="white";
     document.getElementById('svg1').style.display="none";
     document.getElementById('svg2').style.display="inline";
+    document.getElementsByTagName('h3')[0].style.color="white";
 }
 function light() {
     document.body.style.backgroundColor="white";
@@ -67,6 +68,7 @@ function light() {
     document.getElementsByTagName('span')[0].style.color="rgb(25, 0, 255)";
     document.getElementById('svg1').style.display="inline";
     document.getElementById('svg2').style.display="none";
+    document.getElementsByTagName('h3')[0].style.color="black";
 }
 function showTime() {
     var time = new Date();

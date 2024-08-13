@@ -19,7 +19,7 @@ form {
     padding: 30px;
     width: 40%;
     border-radius: 5px;
-    box-shadow: 0 0 8px rgb(0, 68, 255);
+    box-shadow: 0 0 8px #0044ff;
     position: relative;
     transition: all .5s;
 }
