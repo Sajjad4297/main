@@ -22,6 +22,7 @@ form {
     box-shadow: 0 0 8px #0044ff;
     position: relative;
     transition: all .5s;
+    background: rgba(255, 255, 255, 0.709);
 }
 
 form>div {
