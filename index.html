@@ -13,6 +13,7 @@
             background-size: 2000% 2000%;
             animation: gradient 15s ease infinite; */
             padding: 10px;
+            font-family: sans-serif;
         }
 
         /* @keyframes gradient {
@@ -47,9 +48,6 @@
             width: 100%;
         }
 
-        body {
-            font-family: sans-serif;
-        }
 
         a {
             backdrop-filter: blur(16px) saturate(180%);
@@ -68,6 +66,15 @@
             background-color: rgba(255, 255, 255, 0.1);
             color: rgba(255, 255, 255, 1);
         }
+        button{
+            background-color: wheat;
+            color: white;
+            position: absolute;
+            z-index: 1;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -75,10 +82,14 @@
     <video autoplay loop muted id="myVideo">
         <source src="videos/space.mp4" type="video/mp4">
     </video>
+
     <header>
         <a href="Login/Login.html">Login</a>
         <a href="Darage2/Darage2.html">Darage2</a>
+        <button onclick="CheckCookie()">kos</button>
     </header>
+
 </body>
+<script src="cookie.js"></script>
 
 </html>
