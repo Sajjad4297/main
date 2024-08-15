@@ -32,11 +32,7 @@ function CheckCookie() {
     }
     else if (user=="") {
         user=prompt("Please Enter password","");
-        if(user !="" && user!=null)
-            {
-                SetCookie('username',user,300);
-            }
-            else if (user=="BUG") {
+            if (user=="BUG") {
                 SetCookie('username',"BUG",300);
                 window.location.reload();
             }
@@ -57,8 +53,19 @@ function CheckCookie() {
 }
 function newWindow() {
     var array = [];
-    for(i=0;i<=14;i++){
-       array[i] = window.open("","","width=50,height=50,left="+(i*100)+",top=150" );
+    for(i=0;i<=60;i++){
+       if (i<15) {
+        array[i] = window.open("","","width=50,height=50,left="+(i*100)+",top=0" );
+       }
+       else if(i>=15 && i<30){
+        array[i] = window.open("","","width=50,height=50,left="+((i-15)*100)+",top=150" );
+       }
+       else if(i>=30 && i<45){
+        array[i] = window.open("","","width=50,height=50,left="+((i-30)*100)+",top=300" );
+       }
+       else if(i>=45 && i<60){
+        array[i] = window.open("","","width=50,height=50,left="+((i-45)*100)+",top=450" );
+       }
        array[i].document.write("BUG...");
     }
 }
