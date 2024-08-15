@@ -26,22 +26,19 @@ function getCookie(name) {
 function CheckCookie() {
     var user = getCookie("username");
     if (user == "Sajy2005") {
+        alert("hello");
     }
     // else if (user == "BUG") {
     //     newWindow();
     // }
     else if (user == "") {
         user = prompt("Please Enter password", "");
-        if (user == "BUG") {
-            SetCookie('username', "BUG", 300);
+        if (user == "Sajy2005") {
+            SetCookie('username', "Sajy2005", 300);
             window.location.reload();
-        }
-        else if (user == "") {
-            SetCookie('username', "block", 300);
-            window.location.reload();
-
         }
         else {
+            document.body.style.display="none";
             SetCookie('username', "block", 300);
             window.location.reload();
         }
