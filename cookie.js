@@ -25,7 +25,7 @@ function getCookie(name) {
 
 function CheckCookie() {
     var user = getCookie("username");
-    if (user == "Sajy1384") {
+    if (user == "Sajy2005") {
     }
     // else if (user == "BUG") {
     //     newWindow();
